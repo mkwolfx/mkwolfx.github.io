@@ -1,0 +1,23 @@
+{
+  "id": "https://mkwolfx.github.io/note-svg.json",
+  "type": "Note",
+  "attributedTo": "https://mkwolfx.github.io/actor.json",
+  "to": [
+    "https://www.w3.org/ns/activitystreams#Public"
+  ],
+  "cc": [
+    "https://try.nodebb.org/category/3"
+  ],
+  "content": "<p>federation probe beta :pwnsvg: omega</p>",
+  "published": "2026-10-08T15:27:40.977Z",
+  "tag": [
+    {
+      "type": "Emoji",
+      "name": "pwnsvg",
+      "icon": {
+        "url": "https://mkwolfx.github.io/payload.svg",
+        "mediaType": "image/svg+xml"
+      }
+    }
+  ]
+}
