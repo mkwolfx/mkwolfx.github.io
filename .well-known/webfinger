@@ -1,1 +1,18 @@
-{"subject":"acct:probe@mkwolfx.github.io","links":[{"rel":"self","type":"application/activity+json","href":"https://mkwolfx.github.io/probe.json"}]}
+{
+  "subject": "acct:labactor@mkwolfx.github.io",
+  "aliases": [
+    "https://mkwolfx.github.io/actor.json"
+  ],
+  "links": [
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://mkwolfx.github.io/actor.json"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://mkwolfx.github.io/actor.json"
+    }
+  ]
+}
